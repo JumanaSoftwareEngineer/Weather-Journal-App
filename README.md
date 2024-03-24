@@ -31,10 +31,6 @@ This project is licensed under the terms of the MIT License. See the [LICENSE](L
 
 Contributions to the Weather Journal App are welcome! Please follow the guidelines outlined in the [CONTRIBUTING](CONTRIBUTING.md) file.
 
-## Credits
-
-The Weather Journal App was created by **Jumana AL.Balushi**. Special thanks to [Name] for their contributions to the project.
-
 ## Support
 
 If you encounter any issues or have any questions about the Weather Journal App, please contact **jumana.albalushi7@gmail.com** for assistance.
