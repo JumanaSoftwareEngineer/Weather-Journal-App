@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link href="style.css" rel="stylesheet">
+    <title>Weather-Journal App</title>
+</head>
+<body>
+    <div class="weatherForCast">
+        <form>
+            <label for="zip">Enter Zipcode here</label>
+            <input type="text" id="zip" placeholder="enter zip code here">
+            <label for="feelings">How are you feeling today?</label>
+            <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+            <button class="btnGen" id="generate"> Generate </button>
+        </form>
+    </div>
+    <div id="weatherOutput" class ="output">
+        <div class="output-content">
+            <div class="output-header">
+                <span class="close">&times;</span>
+                <h2>Most Recent Entry</h2>
+            </div>
+            <div class="output-body">
+                <img src="" class="weather-icon">
+                <h3 id="city"></h3>
+                <div id = "temp"></div><br>
+                <h4>The Date:</h3><br>
+                <div id = "date"></div><br>
+                <h4>Yor Feelings</h3><br>
+                <div id = "content"></div>
+            </div>
+            <div class="output-footer">
+                <h3>&copy; 2024 Weather-Journal App. All rights reserved.</h3>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        var outpot = document.getElementById("weatherOutput");
+
+        var btn = document.querySelector(".btnGen");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            outpot.style.display = "block";
+        }
+
+        span.onclick = function() {
+            outpot.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+        if (event.target == outpot) {
+            outpot.style.display = "none";
+        }
+        }
+    </script>
+</body>
+</html>

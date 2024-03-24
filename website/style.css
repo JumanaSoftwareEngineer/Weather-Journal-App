@@ -1,0 +1,105 @@
+* {
+    margin:0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */  
+    /* font-family: "Sofia", sans-serif; */
+    font-family: "Audiowide", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+}
+
+.weatherForCast {
+    max-width: 500px;
+    margin: 100px auto 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #6ca1de, #5b548a);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#zip, #feelings {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#generate {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#generate:hover {
+    background-color: #45a049;
+}
+
+.output {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(198, 195, 195); /* Fallback color */
+    background-color: rgba(229, 225, 225, 0.4);
+    text-align: center;
+}
+
+.output-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #6ca1de, #5b548a);
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.output-header {
+    padding: 2px 16px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.output-body {
+    flex-grow: 1; /* This will make the body take up the available space */
+    padding: 2px 16px;
+}
+
+.output-footer {
+    padding: 2px 16px;
+    background-color: #333;
+    color: white;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
